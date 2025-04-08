@@ -143,7 +143,7 @@ color: var(--color-cardInfo);
   color: var(--color-error);
   font-size: 12px;
   margin-top: 5px;
-  /* display: none;  */
+  display: none;  
 }
 
 /* fechas y cvv */
