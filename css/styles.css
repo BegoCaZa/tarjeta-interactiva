@@ -1,3 +1,11 @@
+:root {
+  --color-cardInfo: white;
+  --card-alignment: 40px;
+  --typeography-cardName: 28px;
+  --typeography-cardInfo: 14px;
+
+  
+}
 * {
   box-sizing: border-box;
 }
@@ -24,5 +32,74 @@ nav ul {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: white;
+  background-image: url(../assets/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 40%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cards-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+  margin-left: 100px;
+}
+
+.front-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.261); */
+
+}
+
+.card-logo{
+  position: absolute;
+  top: 30px;
+  left: var(--card-alignment);
+  width: 84px;
+}
+.card-number{
+  position: absolute;
+  top: 160px;
+  left: var(--card-alignment);
+  font-size: var(--typeography-cardName);
+  color: var(--color-cardInfo);
+}
+
+
+.card-info{
+position: absolute;
+top: 200px;
+left: var(--card-alignment);
+font-size: var(--typeography-cardInfo);
+color: var(--color-cardInfo);
+display: flex;
+flex-direction: row;
+width: 80%;
+justify-content: space-between;
+  
+}
+
+.back-card{
+position: relative;
+margin-left: 100px;
+display: flex;
+flex-direction: column;
+}
+
+.card-cvc{
+ position: absolute;
+ top: 110px;
+ left: 360px;
+ font-size: var(--typeography-cardInfo);
+color: var(--color-cardInfo);
 }

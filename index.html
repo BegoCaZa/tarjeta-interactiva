@@ -3,10 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <title>Tarjeta Interactiva</title>
   </head>
   <body>
+    <div class="cards-container">
+      <div class="front-card">
+        <img src="./assets/bg-card-front.png" alt="Front Card" />
+        <img src="./assets/card-logo.svg" alt="Card Logo" class="card-logo" />
+        <span class='card-number'id="card-number">0000 0000 0000 0000</span>
+        <div class="card-info">
+          <span id="card-name">JANE APPLESEED</span>
+          <span id="card-date">00/00</span>
+      </div>
+    </div>
+      <div class="back-card">
+        <img src="./assets/bg-card-back.png" alt="Back Card" />
+        <span class="card-cvc" id="card-cvc">000</span>
+      </div>
+    
     <script src="./js/scripts.js"></script>
   </body>
 </html>
