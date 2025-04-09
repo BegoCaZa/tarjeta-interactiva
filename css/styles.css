@@ -174,30 +174,42 @@ color: var(--color-cardInfo);
 .exp-date-cvv {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .exp-date{
 width: 170px;
 display: flex;
 flex-direction: column;
-align-content: left; 
 }
 
 .exp-date-input{
- width: 170px;
+ width: 100%;
  display: flex;
  flex-direction: row;
- row-gap: 20px;
+ gap: 10px;
+ 
 }
 
 .cvv {
+  width: 190px;
   display: flex;
   flex-direction: column;
 }
 
 .hide{
   display: none;
+}
+
+.submit-button{
+  background-color: var(--color-deepViolet);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 53px;
+  font-size: 20px;
+  font-family: inherit;
 }
 
 
