@@ -5,8 +5,11 @@
   --color-error:red;
   --color-deepViolet:#21092F;
   --card-alignment: 40px;
+  --card-alignment-mobile:20px;
   --typeography-cardName: 28px;
   --typeography-cardInfo: 14px;
+  --typeography-cardName-mobile: 20px;
+  --typeography-cardInfo-mobile: 12px;
 
   
 }
@@ -108,7 +111,6 @@ display: flex;
 flex-direction: row;
 width: 80%;
 justify-content: space-between;
-  
 }
 
 .back-card{
@@ -212,4 +214,88 @@ flex-direction: column;
   font-family: inherit;
 }
 
+@media screen and (max-width: 768px){
+
+  body{
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 0;
+    
+  }
+
+  .cards-container{
+    position: relative;
+    overflow-x: hidden;
+    gap: 10px;
+    padding: 50px;
+    margin: 0;
+  }
+
+  .cards-container::before{
+    content: '';
+    position: absolute;
+    background-image: url(../assets/bg-main-mobile.png);
+    background-position: top right;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    
+  }
+
+  .front-card{
+    width: 280px;
+  }
+  .card-logo{
+    position: absolute;
+    top: 20px;
+    left: var(--card-alignment-mobile);
+    width: 50px;
+  }
+  .card-number{
+    position: absolute;
+    top: 90px;
+    left: var(--card-alignment-mobile);
+    font-size: var(--typeography-cardName-mobile);
+    color: var(--color-cardInfo);
+  }
+  
+  
+  .card-info{
+  position: absolute;
+  top: 120px;
+  left: var(--card-alignment-mobile);
+  font-size: var(--typeography-cardInfo-mobile);
+  color: var(--color-cardInfo);
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  }
+
+  .back-card{
+    position: relative;
+    width: 280px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.261); 
+    }
+    
+    .card-cvc{
+     position: absolute;
+     top: 68px;
+     left: 220px;
+     font-size: var(--typeography-cardInfo-mobile);
+    color: var(--color-cardInfo);
+    }
+
+    .form{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 330px;
+      margin-bottom: 30px;
+    }
+}
 
