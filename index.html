@@ -31,15 +31,15 @@
       <form id="form" class="form">
         <div class="form-field">
           <span class="form-subtitle">CARDHOLDER NAME</span>
-          <input class="form-input" type="text" id="card-name" maxlength="20" placeholder="e.g. Jane Appleseed"/>
-          <span class="error-message hide" id="message-error"></span>
+          <input class="form-input" type="text" id="card-name" maxlength="30" placeholder="e.g. Jane Appleseed"/>
+          <span class="error-message hide" id="name-error"></span>
           
         </div>
 
         <div class="form-field">
           <span class="form-subtitle">CARD NUMBER</span>
-          <input class="form-input" type="text" id="card-number" maxlength="20" placeholder="e.g. 1234 5678 9123 0000"/>
-          <span class="error-message hide" id="message-error"></span>
+          <input class="form-input" type="text" id="card-number" maxlength="16" placeholder="e.g. 1234 5678 9123 0000"/>
+          <span class="error-message hide" id="number-error"></span>
         </div>
 
         <div class="exp-date-cvv">
@@ -51,15 +51,15 @@
             <input class="form-input" type="text" id="exp-month" maxlength="2" placeholder="MM"/>
             <input class="form-input" type="text" id="exp-year" maxlength="2" placeholder="YY"/>
             </div>
-
-            <span class="error-message hide" id="message-error"></span>
+            <span class="error-message hide" id="month-error"></span>
+            <span class="error-message hide" id="year-error"></span>
           </div>
 
 
           <div class="cvv">
             <span class="form-subtitle">CVC</span>
             <input class="form-input" type="text" id="cvc" maxlength="3" placeholder="e.g. 123"/>
-            <span class="error-message hide" id="message-error"></span>
+            <span class="error-message hide" id="cvc-error"></span>
         </div>
         </div>
 
