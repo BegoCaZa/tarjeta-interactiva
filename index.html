@@ -29,16 +29,17 @@
       </div>
     </div>
       <form id="form" class="form">
-        <div class="form-input">
+        <div class="form-field">
           <span class="form-subtitle">CARDHOLDER NAME</span>
-          <input type="text" id="card-name" maxlength="20" placeholder="e.g. Jane Appleseed"/>
-          <span class="error-message" id="name-error">Can't be blank</span>
+          <input class="form-input" type="text" id="card-name" maxlength="20" placeholder="e.g. Jane Appleseed"/>
+          <span class="error-message hide" id="message-error"></span>
+          
         </div>
 
-        <div class="form-input">
+        <div class="form-field">
           <span class="form-subtitle">CARD NUMBER</span>
-          <input type="text" id="card-number" maxlength="20" placeholder="e.g. 1234 5678 9123 0000"/>
-          <span class="error-message" id="number-error">Wrong format, numbers only</span>
+          <input class="form-input" type="text" id="card-number" maxlength="20" placeholder="e.g. 1234 5678 9123 0000"/>
+          <span class="error-message hide" id="message-error"></span>
         </div>
 
         <div class="exp-date-cvv">
@@ -47,18 +48,18 @@
             <span class="form-subtitle">EXP. DATE (MM/YY)</span>
           
             <div class="exp-date-input">
-            <input type="text" id="exp-month" maxlength="2" placeholder="MM"/>
-            <input type="text" id="exp-year" maxlength="2" placeholder="YY"/>
+            <input class="form-input" type="text" id="exp-month" maxlength="2" placeholder="MM"/>
+            <input class="form-input" type="text" id="exp-year" maxlength="2" placeholder="YY"/>
             </div>
 
-            <span class="error-message" id="date-error">Can't be blank</span>
+            <span class="error-message hide" id="message-error"></span>
           </div>
 
 
           <div class="cvv">
             <span class="form-subtitle">CVC</span>
-            <input type="text" id="cvc" maxlength="3" placeholder="e.g. 123"/>
-            <span class="error-message" id="cvc-error">Can't be blank</span>
+            <input class="form-input" type="text" id="cvc" maxlength="3" placeholder="e.g. 123"/>
+            <span class="error-message hide" id="message-error"></span>
         </div>
         </div>
 
